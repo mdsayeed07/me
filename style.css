@@ -6,15 +6,17 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    /* font-family: 'poppins', sans-serif; */
+    font-family: 'poppins', sans-serif;
 }
 
 body {
-    background: #c2e9ff;
+    /* background: #000; */
+    background-image: url(./img/bg.jpg);
+    background-size: cover;
 }
 
 header {
-    background: #000;
+    background: black;
     height: 80px;
     width: 100%;
 }
@@ -102,27 +104,40 @@ a.navHover:hover {
         font-size: 20px;
     }
 
+    a:hover,
+    a.active {
+        color: #3b59ff;
+        background: aqua;
+        transition: .5s;
+    }
+
     #check:checked~ul {
         left: 0;
     }
 }
 
+/* CSS for section body */
+section {
+    background: url(./img/bg.png) no-repeat;
+    background-size: cover;
+}
+
 /* css for footer */
 /* ************************************* */
-/* @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700'); */
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
-/* * {
+* {
     padding: 0;
     margin: 0;
-} */
+}
 
-/* html {
+html {
     background-color: #eaf0f2;
-} */
+}
 
-/* body {
+body {
     font: 16px/1.6 Arial, sans-serif;
-} */
+}
 
 footer {
     position: fixed;
@@ -162,16 +177,17 @@ footer {
     width: 30%;
 }
 
-/* The company logo */
-
 .footer-distributed h3 {
     color: #ffffff;
     font: normal 36px 'Cookie', cursive;
     margin: 0;
 }
 
+/* The company logo */
+
 .footer-distributed h3 span {
     /* color: #e0ac1c; */ color: aqua;
+    font-family: "Lucida Handwriting", "Courier", sans-serif;
     font: normal 40px 'Cookie', cursive;
 }
 
@@ -201,6 +217,7 @@ footer {
 .footer-distributed .footer-center {
     width: 35%;
 }
+
 
 .footer-distributed .footer-center i {
     background-color: #33383b;
